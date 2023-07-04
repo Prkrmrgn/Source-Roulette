@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Source Roulette</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Source Roulette <br> <h2>Discover New Sourcing Opportunities With One Click</h2></h1>
+  </header>
+
+  <main>
+    <section>
+        <img src="Source Roullete.png" alt="Click for Your Daily Profit Source" id="randomsitebutton" onclick="generateRandomSite()">
+        <h2>Spin the Wheel to Find Your Daily Profit Source</h2>
+        <p id="generatedsitename"></p>
+    </section>
+  </main>
+
+  <footer>
+    <!-- Your footer content here -->
+    <h3>Contact Me:</h3>
+    <a href="https://twitter.com/Parkeriscoding">Twitter</a>
+  </footer>
+
+  <script>
+function generateRandomSite() {
+  let sites = ['https://www.Funko.com',
+  'https://www.Walmart.com',
+  'https://www.Target.com',
+  'https://us.Zavvi.com',
+  'https://www.HotTopic.com',
+  'https://www.BoxLunch.com',
+  'https://www.PopInABox.us',
+  'https://www.FYE.com',
+  'https://www.Stanley1913.com',
+  'https://www.Adidas.com',
+  'https://www.NewBalance.com',
+  'https://www.Skechers.com',
+  'https://www.Nike.com',
+  'https://www.Crocs.com',
+  'https://www.UnderArmour.com',
+  'https://www.VitaCost.com',
+  'https://Store.CrunchyRoll.com',
+  'https://www.UrbanOutFitters.com',
+  'https://www.Meta.com/', 
+  'https://www.DicksSportingGoods.com',
+  'https://www.VeraBradley.com',
+  'https://www.Walgreens.com',
+  'https://www.Walmart.com',
+  'https://www.Zulily.com',
+  'https://www.Overstock.com',
+  'https://www.Wayfair.com',
+  'https://www.Academy.com',
+  'https://www.BJS.com',
+  'https://www.Belk.com',
+  'https://www.Bootbarn.com',
+  'https://www.Burlington.com',
+  'https://www.BuyBuyBaby.com',
+  'https://www.Cabelas.com',
+  'https://www.Campmor.com',
+  'https://www.ChildrensPlace.com',
+  'https://www.Claires.com',
+  'https://www.CoastalScents.com',
+  'https://www.CottonOn.com',
+  'https://www.CrateandBarrel.com',
+  'https://www.Dillards.com',
+  'https://www.Ebay.com',
+  'https://www.FootLocker.com',
+  'https://www.Forever21.com',
+  'https://www.Gap.com',
+  'https://www.Guess.com',
+  'https://www.HSN.com',
+  'https://www.JCPenny.com',
+  'https://www.Lids.com',
+  'https://www.LuLuLemon.com',
+  'https://www.Macys.com',
+  'https://www.Marshalls.com',
+  'https://www.Meijer.com',
+  'https://www.Menards.com',
+  'https://www.NeimanMarcus.com',
+  'https://www.OldNavy.com',
+  'https://www.OrientalTrading.com',
+  'https://www.OverStock.com',
+  'https://www.PetSmart.com',
+  'https://www.Pier1.com',
+  'https://www.PotteryBarn.com',
+  'https://www.QVC.com',
+  'https://www.RossStores.com',
+  'https://www.RuralKing.com',
+  'https://www.Sephora.com',
+  'https://www.ShopDisney.com',
+  'https://www.SierraTradingPost.com',
+  'https://www.Staples.com',
+  'https://www.TJMaxx.tjx.com',
+  'https://www.Toysrus.com',
+  'https://www.TractorSupply.com',
+  'https://www.Ulta.com',
+  'https://www.UnCommonGoods.com',
+  'https://www.Ulta.com',
+'https://www.KMart.com',
+'https://www.Walgreens.com',
+'https://www.SamsClub.com',
+'https://www.Homedepot.com',
+'https://www.Lowes.com',
+'https://www.Kohls.com',
+'https://www.CVS.com',
+'https://www.Sears.com',
+'https://www.BestBuy.com',
+'https://www.NordstromRack.com',
+'https://www.OfficeDepot.com',
+'https://www.GameStop.com',
+'https://www.AlexAndAlexa.com',
+'https://www.BackCountry.com',
+'https://www.BareNecessities.com',
+'https://www.BarnesAndNoble.com',
+'https://www.BathAndBodyWorks.com',
+'https://www.BedBathAndBeyond.com',
+'https://www.Big5SportingGoods.com',
+'https://www.BooksAMillion.com',
+'https://www.ChampsSports.com',
+'https://www.Chewy.com',
+'https://www.Costco.com',
+'https://www.Dickies.com',
+'https://www.DollarTree.com',
+'https://www.DollarGeneral.com',
+'https://www.EntertainmentEarth.com',
+'https://www.FiveBelow.com',
+'https://www.HarborFreight.com',
+'https://www.Lego.com',
+'https://www.OfficeSupply.com',
+'https://www.Petco.com',
+'https://www.ShoeCarnival.com',
+'https://www.ShoeMall.com',
+'https://www.SoftBall.com',
+'https://www.SportsmansGuide.com',
+'https://www.SwansonVitamins.com',
+'https://www.TacticalGear.com',
+'https://www.ThatPetPlace.com',
+'https://www.TMart.com',
+'https://www.ToyTokyo.com',
+'https://www.ToyWiz.com',
+'https://www.VitaminLife.com',
+'https://www.VitaminWorld.com',
+'https://www.VitaminShoppe.com',
+'https://www.WholesaleHalloweenCostumes.com',
+'https://www.Williams-Sonoma.com',
+'https://www.Zumiez.com',
+'https://www.Zappos.com',
+'https://www.WorldWideGolfShops.com',
+'https://www.Woot.com',
+'https://www.WorldMarket.com']; // your list of sites here
+
+var imgButton = document.getElementById('randomsitebutton');
+
+// Add the 'spin' class to trigger the animation
+imgButton.classList.add('spin');
+
+// Set a delay to match the duration of the animation
+setTimeout(function() {
+  // After the delay, remove the 'spin' class
+  imgButton.classList.remove('spin');
+
+  // Generate a random index between 0 and the length of the array
+  let randomIndex = Math.floor(Math.random() * sites.length);
+
+  // Get the site at the randomly generated index
+  let randomSite = sites[randomIndex];
+
+  // Set the site as the inner text of the paragraph
+  document.getElementById('generatedsitename').innerText = randomSite;
+
+  // Create a new anchor element
+  let a = document.createElement('a');
+
+  // Set the href attribute to the site's URL
+  a.href = randomSite;
+
+  // Extract the site name from the URL
+  let siteName = randomSite.replace('https://www.', '').replace('.com', '');
+
+  // Set the visible text to the site's name
+  a.textContent = siteName;
+
+  // Clear any previous content in the paragraph
+  document.getElementById('generatedsitename').textContent = '';
+
+  // Append the anchor element to the paragraph
+  document.getElementById('generatedsitename').appendChild(a);
+
+}, 2000);
+}
+
+
+  </script>
+</body>
+</html>
